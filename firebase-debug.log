@@ -1,0 +1,89 @@
+[debug] [2024-05-13T10:13:11.237Z] ----------------------------------------------------------------------
+[debug] [2024-05-13T10:13:11.241Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tuwim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-13T10:13:11.241Z] CLI Version:   13.8.3
+[debug] [2024-05-13T10:13:11.241Z] Platform:      win32
+[debug] [2024-05-13T10:13:11.242Z] Node Version:  v20.13.1
+[debug] [2024-05-13T10:13:11.242Z] Time:          Mon May 13 2024 12:13:11 GMT+0200 (Central Africa Time)
+[debug] [2024-05-13T10:13:11.242Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-13T10:13:11.343Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-13T10:13:11.344Z] > authorizing via signed-in user (tuwi.mulongeni@gmail.com)
+[debug] [2024-05-13T10:13:11.344Z] [iam] checking project landing-page-77aee for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-13T10:13:11.347Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/landing-page-77aee:testIamPermissions [none]
+[debug] [2024-05-13T10:13:11.347Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/landing-page-77aee:testIamPermissions x-goog-quota-user=projects/landing-page-77aee
+[debug] [2024-05-13T10:13:11.347Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/landing-page-77aee:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-13T10:13:13.516Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/landing-page-77aee:testIamPermissions 200
+[debug] [2024-05-13T10:13:13.517Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/landing-page-77aee:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-13T10:13:13.518Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/landing-page-77aee [none]
+[debug] [2024-05-13T10:13:14.522Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/landing-page-77aee 200
+[debug] [2024-05-13T10:13:14.523Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/landing-page-77aee {"projectId":"landing-page-77aee","projectNumber":"489571959559","displayName":"Landing Page","name":"projects/landing-page-77aee","resources":{"hostingSite":"landing-page-77aee"},"state":"ACTIVE","etag":"1_f240bb95-19d8-433c-ac76-da2608126408"}
+[debug] [2024-05-13T10:13:18.804Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/landing-page-77aee/sites pageToken=&pageSize=10
+[debug] [2024-05-13T10:13:21.278Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/landing-page-77aee/sites 200
+[debug] [2024-05-13T10:13:21.278Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/landing-page-77aee/sites {"sites":[{"name":"projects/landing-page-77aee/sites/landing-page-77aee","defaultUrl":"https://landing-page-77aee.web.app","appId":"1:489571959559:web:470c032f1820c2dbf8fba2","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-13T10:13:21.279Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:489571959559:web:470c032f1820c2dbf8fba2/config [none]
+[debug] [2024-05-13T10:13:22.843Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:489571959559:web:470c032f1820c2dbf8fba2/config 200
+[debug] [2024-05-13T10:13:22.843Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:489571959559:web:470c032f1820c2dbf8fba2/config {"projectId":"landing-page-77aee","appId":"1:489571959559:web:470c032f1820c2dbf8fba2","storageBucket":"landing-page-77aee.appspot.com","apiKey":"AIzaSyDfflUX5Ufozg__V4KzHFKQlEaDe3wqDj4","authDomain":"landing-page-77aee.firebaseapp.com","messagingSenderId":"489571959559"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-13T10:13:30.770Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/landing-page-77aee/sites/landing-page-77aee [none]
+[debug] [2024-05-13T10:13:33.042Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/landing-page-77aee/sites/landing-page-77aee 200
+[debug] [2024-05-13T10:13:33.043Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/landing-page-77aee/sites/landing-page-77aee {"name":"projects/landing-page-77aee/sites/landing-page-77aee","defaultUrl":"https://landing-page-77aee.web.app","appId":"1:489571959559:web:470c032f1820c2dbf8fba2","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/4) ...
+
+[info]    Generating static pages (1/4) 
+
+[info]    Generating static pages (2/4) 
+
+[info]    Generating static pages (3/4) 
+
+[info]  ✓ Generating static pages (4/4)
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    175 B          92.2 kB
+└ ○ /_not-found                          871 B          87.8 kB
++ First Load JS shared by all            87 kB
+  ├ chunks/23-0627c91053ca9399.js        31.5 kB
+  ├ chunks/fd9d1056-2821b0f0cabcd8bd.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+
+[info] ○  (Static)  prerendered as static content
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • Image Optimization
+[info] 
+[debug] [2024-05-13T10:14:05.826Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/landing-page-77aee/sites/landing-page-77aee [none]
+[debug] [2024-05-13T10:14:08.657Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/landing-page-77aee/sites/landing-page-77aee 200
+[debug] [2024-05-13T10:14:08.657Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/landing-page-77aee/sites/landing-page-77aee {"name":"projects/landing-page-77aee/sites/landing-page-77aee","defaultUrl":"https://landing-page-77aee.web.app","appId":"1:489571959559:web:470c032f1820c2dbf8fba2","type":"DEFAULT_SITE"}
+[debug] [2024-05-13T10:14:09.569Z] Error: ENOENT: no such file or directory, lstat 'C:\Users\tuwim\Documents\saas-app\.next\C:\Users\tuwim\Documents\saas-app\.next\app-build-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
